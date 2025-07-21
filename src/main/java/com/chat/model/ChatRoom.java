@@ -1,11 +1,11 @@
 package com.chat.model;
 
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Transient;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,8 +13,6 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
 public class ChatRoom {
 
@@ -22,12 +20,31 @@ public class ChatRoom {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
     private String chatId;
-
-    @Column(nullable = false)
     private String senderId;
-
-    @Column(nullable = false)
     private String recipientId;
+    @Transient
+    private String recipient_name;
+    @Transient
+    private boolean online;
+    @Transient
+    private int unreadCount;
+    
+	public ChatRoom(Long id, String chatId, String senderId, String recipientId) {
+		super();
+		this.id = id;
+		this.chatId = chatId;
+		this.senderId = senderId;
+		this.recipientId = recipientId;
+	}
+	public ChatRoom(String chatId,String senderId, String recipientId) {
+		super();
+		this.chatId=chatId;
+		this.senderId = senderId;
+		this.recipientId = recipientId;
+	}
+    
+	
+	
+    
 }

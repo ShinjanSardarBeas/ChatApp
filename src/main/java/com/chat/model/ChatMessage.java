@@ -7,87 +7,35 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "chat_message")
 public class ChatMessage {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-	@Column(name = "chat_id", nullable = false)
-	private String chatId;
-
-	@Column(name = "sender_id", nullable = false)
-	private String senderId;
-
-	@Column(name = "recipient_id", nullable = false)
-	private String recipientId;
-
-	@Column(nullable = false)
-	private String content;
-
-	private Date timestamp;
-
-	public ChatMessage() {
-
-	}
-
-	public ChatMessage(String chatId, String senderId, String recipientId, String content) {
-		this.chatId = chatId;
-		this.senderId = senderId;
-		this.recipientId = recipientId;
-		this.content = content;
-		this.timestamp = new Date();
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getChatId() {
-		return chatId;
-	}
-
-	public void setChatId(String chatId) {
-		this.chatId = chatId;
-	}
-
-	public String getSenderId() {
-		return senderId;
-	}
-
-	public void setSenderId(String senderId) {
-		this.senderId = senderId;
-	}
-
-	public String getRecipientId() {
-		return recipientId;
-	}
-
-	public void setRecipientId(String recipientId) {
-		this.recipientId = recipientId;
-	}
-
-	public String getContent() {
-		return content;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-	public Date getTimestamp() {
-		return timestamp;
-	}
-
-	public void setTimestamp(Date timestamp) {
-		this.timestamp = timestamp;
-	}
+    private String chatId;
+    private String senderId;
+    private String recipientId;
+    @Column(columnDefinition = "LONGTEXT")
+    private String content;
+    private Date timestamp;
+    private String sender_name;
+    private String recipient_name;
+    private Boolean isRead = false;
+    private Date seenTimestamp;
+@Transient
+    private boolean online;
 }

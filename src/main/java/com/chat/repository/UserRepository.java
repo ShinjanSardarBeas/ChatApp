@@ -1,18 +1,21 @@
 
 package com.chat.repository;
 
-import java.util.List;
-import java.util.Optional;
-
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
-import com.chat.model.Status;
 import com.chat.model.User;
 
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Integer> {
 
-	List<User> findAllByStatus(Status staus);
+	@Query("select u from User u where u.id=:senderId")
+	User getSenderName(@Param("senderId") String senderId);
 
-	Optional<User> findByFullName(String fullName);
+	@Query("select u from User u where u.id=:recipientId")
+	User getRecipientName(@Param("recipientId") String recipientId);
+
+	@Query("select u from User u where u.id=:senderId")
+	User getStatusBySenderId(@Param("senderId") int senderId);
 
 }
