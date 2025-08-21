@@ -3,6 +3,8 @@ package com.chat.controller;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.handler.annotation.MessageMapping;
@@ -26,6 +28,8 @@ import com.chat.service.ChatMessageService;
 @CrossOrigin(origins = "*")
 public class ChatController {
 
+	private final Logger logger = LogManager.getLogger(ChatController.class);
+	
 	@Autowired
 	private SimpMessagingTemplate messagingTemplate;
 	@Autowired
@@ -37,7 +41,7 @@ public class ChatController {
     public void processMessage(@Payload ChatMessage chatMessage) {
         try {
             ChatMessage savedMessage = chatMessageService.save(chatMessage);
-            System.err.println("recipient Id "+chatMessage.getRecipientId());
+            logger.info("recipient Id "+chatMessage.getRecipientId());
             messagingTemplate.convertAndSendToUser(chatMessage.getRecipientId(), "/queue/messages", savedMessage);
           
         } catch (Exception e) {
@@ -70,7 +74,7 @@ public class ChatController {
     
     @GetMapping("/unread-count/{userId}")
     public ResponseEntity<Map<String, Integer>> getUnreadMessageCounts(@PathVariable("userId") String userId) {
-    	System.err.println("executing..unreadCount "+userId);
+    	logger.info("executing..unreadCount "+userId);
         Map<String, Integer> unreadCounts = chatMessageService.getUnreadMessageCounts(userId);
         return ResponseEntity.ok(unreadCounts);
     } 

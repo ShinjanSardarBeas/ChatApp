@@ -1,0 +1,225 @@
+2025-08-14T15:40:10.486+05:30  INFO 45708 --- [ChatApplication] [restartedMain] com.chat.ChatOneToOneApplication         : Starting ChatOneToOneApplication using Java 17.0.15 with PID 45708 (D:\Barsha_podder\CodeBases\project_testing_tracker\ChatApp\target\classes started by Beasdev in D:\Barsha_podder\CodeBases\project_testing_tracker\ChatApp)
+2025-08-14T15:40:10.491+05:30  INFO 45708 --- [ChatApplication] [restartedMain] com.chat.ChatOneToOneApplication         : The following 1 profile is active: "dev"
+2025-08-14T15:40:10.559+05:30  INFO 45708 --- [ChatApplication] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-14T15:40:10.560+05:30  INFO 45708 --- [ChatApplication] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-14T15:40:11.516+05:30  INFO 45708 --- [ChatApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T15:40:11.703+05:30  INFO 45708 --- [ChatApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176 ms. Found 3 JPA repository interfaces.
+2025-08-14T15:40:12.089+05:30  INFO 45708 --- [ChatApplication] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=de6c3a4b-0f7f-34cd-b892-734c53c2e1e6
+2025-08-14T15:40:12.278+05:30  WARN 45708 --- [ChatApplication] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-08-14T15:40:12.281+05:30  WARN 45708 --- [ChatApplication] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-08-14T15:40:12.754+05:30  INFO 45708 --- [ChatApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-14T15:40:12.767+05:30  INFO 45708 --- [ChatApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T15:40:12.768+05:30  INFO 45708 --- [ChatApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-08-14T15:40:12.840+05:30  INFO 45708 --- [ChatApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2025-08-14T15:40:12.841+05:30  INFO 45708 --- [ChatApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2280 ms
+2025-08-14T15:40:13.048+05:30  INFO 45708 --- [ChatApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T15:40:13.133+05:30  INFO 45708 --- [ChatApplication] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-08-14T15:40:13.184+05:30  INFO 45708 --- [ChatApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T15:40:13.568+05:30  INFO 45708 --- [ChatApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T15:40:13.603+05:30  INFO 45708 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T15:40:13.905+05:30  INFO 45708 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@742d4ff8
+2025-08-14T15:40:13.908+05:30  INFO 45708 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T15:40:14.084+05:30  WARN 45708 --- [ChatApplication] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T15:40:14.085+05:30  WARN 45708 --- [ChatApplication] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-14T15:40:15.022+05:30  INFO 45708 --- [ChatApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T15:40:15.191+05:30  INFO 45708 --- [ChatApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T15:40:15.264+05:30  WARN 45708 --- [ChatApplication] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'devLog4j2Config': Invocation of init method failed
+2025-08-14T15:40:15.264+05:30  INFO 45708 --- [ChatApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T15:40:15.270+05:30  INFO 45708 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T15:40:15.320+05:30  INFO 45708 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T15:40:15.322+05:30  INFO 45708 --- [ChatApplication] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-14T15:40:15.340+05:30  INFO 45708 --- [ChatApplication] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-14T15:40:15.367+05:30 ERROR 45708 --- [ChatApplication] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'devLog4j2Config': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.chat.ChatOneToOneApplication.main(ChatOneToOneApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.0.jar:3.3.0]
+Caused by: java.lang.ClassCastException: class org.apache.logging.slf4j.SLF4JLoggerContext cannot be cast to class org.apache.logging.log4j.core.LoggerContext (org.apache.logging.slf4j.SLF4JLoggerContext and org.apache.logging.log4j.core.LoggerContext are in unnamed module of loader 'app')
+	at com.chat.config.DevLog4j2Config.init(DevLog4j2Config.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 23 common frames omitted
+
+2025-08-14T16:46:02.557+05:30  INFO 54712 --- [ChatApplication] [restartedMain] com.chat.ChatOneToOneApplication         : Starting ChatOneToOneApplication using Java 17.0.15 with PID 54712 (D:\Barsha_podder\CodeBases\project_testing_tracker\ChatApp\target\classes started by Beasdev in D:\Barsha_podder\CodeBases\project_testing_tracker\ChatApp)
+2025-08-14T16:46:02.562+05:30  INFO 54712 --- [ChatApplication] [restartedMain] com.chat.ChatOneToOneApplication         : The following 1 profile is active: "dev"
+2025-08-14T16:46:02.638+05:30  INFO 54712 --- [ChatApplication] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-14T16:46:02.638+05:30  INFO 54712 --- [ChatApplication] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-14T16:46:03.583+05:30  INFO 54712 --- [ChatApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T16:46:03.795+05:30  INFO 54712 --- [ChatApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 200 ms. Found 3 JPA repository interfaces.
+2025-08-14T16:46:04.164+05:30  INFO 54712 --- [ChatApplication] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=de6c3a4b-0f7f-34cd-b892-734c53c2e1e6
+2025-08-14T16:46:04.401+05:30  WARN 54712 --- [ChatApplication] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-08-14T16:46:04.406+05:30  WARN 54712 --- [ChatApplication] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-08-14T16:46:04.966+05:30  INFO 54712 --- [ChatApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-14T16:46:04.983+05:30  INFO 54712 --- [ChatApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T16:46:04.983+05:30  INFO 54712 --- [ChatApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-08-14T16:46:05.080+05:30  INFO 54712 --- [ChatApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2025-08-14T16:46:05.080+05:30  INFO 54712 --- [ChatApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2441 ms
+2025-08-14T16:46:05.297+05:30  INFO 54712 --- [ChatApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T16:46:05.366+05:30  INFO 54712 --- [ChatApplication] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-08-14T16:46:05.413+05:30  INFO 54712 --- [ChatApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T16:46:05.798+05:30  INFO 54712 --- [ChatApplication] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T16:46:05.832+05:30  INFO 54712 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T16:46:06.217+05:30  INFO 54712 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c6601b0
+2025-08-14T16:46:06.220+05:30  INFO 54712 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T16:46:06.324+05:30  WARN 54712 --- [ChatApplication] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T16:46:06.326+05:30  WARN 54712 --- [ChatApplication] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-14T16:46:07.407+05:30  INFO 54712 --- [ChatApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T16:46:07.586+05:30  INFO 54712 --- [ChatApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T16:46:07.677+05:30  WARN 54712 --- [ChatApplication] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'devLog4j2Config': Invocation of init method failed
+2025-08-14T16:46:07.678+05:30  INFO 54712 --- [ChatApplication] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T16:46:07.685+05:30  INFO 54712 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T16:46:07.728+05:30  INFO 54712 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T16:46:07.732+05:30  INFO 54712 --- [ChatApplication] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-14T16:46:07.753+05:30  INFO 54712 --- [ChatApplication] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-14T16:46:07.788+05:30 ERROR 54712 --- [ChatApplication] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'devLog4j2Config': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.chat.ChatOneToOneApplication.main(ChatOneToOneApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.0.jar:3.3.0]
+Caused by: java.lang.ClassCastException: class org.apache.logging.slf4j.SLF4JLoggerContext cannot be cast to class org.apache.logging.log4j.core.LoggerContext (org.apache.logging.slf4j.SLF4JLoggerContext and org.apache.logging.log4j.core.LoggerContext are in unnamed module of loader 'app')
+	at com.chat.config.DevLog4j2Config.init(DevLog4j2Config.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 23 common frames omitted
+
+2025-08-14T16:58:54.329+05:30  INFO 45084 --- [ChatApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T16:58:54.332+05:30  INFO 45084 --- [ChatApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-08-14T16:58:54.400+05:30  INFO 45084 --- [ChatApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2025-08-14T16:58:54.562+05:30  INFO 45084 --- [ChatApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T16:58:54.620+05:30  INFO 45084 --- [ChatApplication] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-08-14T16:58:54.652+05:30  INFO 45084 --- [ChatApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T16:58:54.970+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T16:58:55.266+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34a28696
+2025-08-14T16:58:55.269+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T16:58:55.320+05:30  WARN 45084 --- [ChatApplication] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T16:58:55.321+05:30  WARN 45084 --- [ChatApplication] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-14T16:58:56.200+05:30  INFO 45084 --- [ChatApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T16:58:58.297+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T16:58:58.302+05:30  INFO 45084 --- [ChatApplication] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T16:58:58.322+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T16:58:58.323+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T16:58:58.323+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T16:58:58.323+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T16:58:58.323+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T16:58:58.323+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T16:58:58.323+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T16:58:58.676+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T16:58:58.679+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T16:58:58.682+05:30  INFO 45084 --- [ChatApplication] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T16:58:58.688+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755170938687 with initial instances count: 1
+2025-08-14T16:58:58.690+05:30  INFO 45084 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755170938690, current=UP, previous=STARTING]
+2025-08-14T16:58:58.692+05:30  INFO 45084 --- [ChatApplication] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHATAPPLICATION/DESKTOP-AF6FOBH:ChatApplication:8083: registering service...
+2025-08-14T16:58:58.739+05:30  INFO 45084 --- [ChatApplication] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHATAPPLICATION/DESKTOP-AF6FOBH:ChatApplication:8083 - registration status: 204
+2025-08-14T17:03:58.327+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T17:08:58.334+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T17:13:58.343+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T17:18:58.360+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T17:23:58.375+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T17:28:58.394+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T17:33:58.402+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T17:38:58.411+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T17:43:58.427+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T17:48:58.444+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T17:53:58.448+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T17:58:58.449+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T18:03:58.466+05:30  INFO 45084 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T18:05:21.321+05:30  INFO 45084 --- [ChatApplication] [RMI TCP Connection(77)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755174921321, current=DOWN, previous=UP]
+2025-08-14T18:05:21.323+05:30  INFO 45084 --- [ChatApplication] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHATAPPLICATION/DESKTOP-AF6FOBH:ChatApplication:8083: registering service...
+2025-08-14T18:05:21.334+05:30  INFO 45084 --- [ChatApplication] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHATAPPLICATION/DESKTOP-AF6FOBH:ChatApplication:8083 - registration status: 204
+2025-08-14T18:05:21.342+05:30  INFO 45084 --- [ChatApplication] [RMI TCP Connection(77)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T18:05:21.393+05:30  INFO 45084 --- [ChatApplication] [RMI TCP Connection(77)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T18:05:21.394+05:30  INFO 45084 --- [ChatApplication] [RMI TCP Connection(77)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-14T18:05:24.400+05:30  INFO 45084 --- [ChatApplication] [RMI TCP Connection(77)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-14T18:05:24.407+05:30  INFO 45084 --- [ChatApplication] [RMI TCP Connection(77)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHATAPPLICATION/DESKTOP-AF6FOBH:ChatApplication:8083 - deregister  status: 200
+2025-08-14T18:05:24.413+05:30  INFO 45084 --- [ChatApplication] [RMI TCP Connection(77)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-14T18:06:05.341+05:30  INFO 26608 --- [ChatApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T18:06:05.344+05:30  INFO 26608 --- [ChatApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-08-14T18:06:05.432+05:30  INFO 26608 --- [ChatApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/chat]   : Initializing Spring embedded WebApplicationContext
+2025-08-14T18:06:05.640+05:30  INFO 26608 --- [ChatApplication] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T18:06:05.707+05:30  INFO 26608 --- [ChatApplication] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-08-14T18:06:05.746+05:30  INFO 26608 --- [ChatApplication] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T18:06:06.129+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T18:06:06.509+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@607d0631
+2025-08-14T18:06:06.511+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T18:06:06.572+05:30  WARN 26608 --- [ChatApplication] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T18:06:06.573+05:30  WARN 26608 --- [ChatApplication] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-14T18:06:07.514+05:30  INFO 26608 --- [ChatApplication] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T18:06:09.702+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T18:06:09.709+05:30  INFO 26608 --- [ChatApplication] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T18:06:09.735+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T18:06:09.735+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T18:06:09.735+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T18:06:09.735+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T18:06:09.736+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T18:06:09.736+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T18:06:09.736+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T18:06:10.116+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T18:06:10.119+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T18:06:10.124+05:30  INFO 26608 --- [ChatApplication] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T18:06:10.130+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755174970129 with initial instances count: 1
+2025-08-14T18:06:10.134+05:30  INFO 26608 --- [ChatApplication] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755174970134, current=UP, previous=STARTING]
+2025-08-14T18:06:10.137+05:30  INFO 26608 --- [ChatApplication] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHATAPPLICATION/DESKTOP-AF6FOBH:ChatApplication:8083: registering service...
+2025-08-14T18:06:10.195+05:30  INFO 26608 --- [ChatApplication] [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CHATAPPLICATION/DESKTOP-AF6FOBH:ChatApplication:8083 - registration status: 204
+2025-08-14T18:11:09.746+05:30  INFO 26608 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T18:16:09.752+05:30  INFO 26608 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T18:21:09.763+05:30  INFO 26608 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T18:26:09.780+05:30  INFO 26608 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T18:31:09.787+05:30  INFO 26608 --- [ChatApplication] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
