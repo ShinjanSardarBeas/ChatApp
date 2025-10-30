@@ -37,10 +37,7 @@ import com.chat.service.ChatMessageService;
 public class ChatController {
 
 	private final Logger logger = LogManager.getLogger(ChatController.class);
-	private static final String APIGATEWAY_VALIDATE_TOKEN_URL = "http://192.168.1.183:8086/api/v1/validateToken";
 
-	@Autowired
-    private RestTemplate restTemplate;
 	@Autowired
 	private SimpMessagingTemplate messagingTemplate;
 	@Autowired
@@ -72,96 +69,21 @@ public class ChatController {
 	}
 	
     @PostMapping("/markAsRead")
-    public ResponseEntity<?> markMessagesAsRead(@RequestHeader("Authorization") String token, @RequestBody MarkAsReadRequest request) {
-    	try {
-            HttpHeaders headers = new HttpHeaders();
-            headers.set("Authorization", token);
-            HttpEntity<Void> requestEntity = new HttpEntity<>(headers);
-            
-            ResponseEntity<String> validationResponse = restTemplate.exchange(
-                APIGATEWAY_VALIDATE_TOKEN_URL,
-                HttpMethod.GET,
-                requestEntity,
-                String.class
-            );
-            
-            if (validationResponse.getStatusCode() != HttpStatus.OK) {
-                 return ResponseEntity.status(validationResponse.getStatusCode())
-                                      .body(null);
-            }
-            
-        } catch (HttpClientErrorException e) {
-            System.err.println("External token validation failed with status: " + e.getStatusCode());
-            return ResponseEntity.status(e.getStatusCode()).body(null);
-            
-        } catch (RestClientException e) {
-            System.err.println("Error calling external validation service: " + e.getMessage());
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
-        }
+    public ResponseEntity<?> markMessagesAsRead(@RequestBody MarkAsReadRequest request) {
     	chatMessageService.markMessagesAsRead(request.getSenderId(), request.getRecipientId());
         return ResponseEntity.ok().build();
     }
     
     @PostMapping("/markAsSeen/{recipientId}")
-    public ResponseEntity<?> markMessagesAsSeen(@RequestHeader("Authorization") String token, @PathVariable String recipientId) {
-    	try {
-            HttpHeaders headers = new HttpHeaders();
-            headers.set("Authorization", token);
-            HttpEntity<Void> requestEntity = new HttpEntity<>(headers);
-            
-            ResponseEntity<String> validationResponse = restTemplate.exchange(
-                APIGATEWAY_VALIDATE_TOKEN_URL,
-                HttpMethod.GET,
-                requestEntity,
-                String.class
-            );
-            
-            if (validationResponse.getStatusCode() != HttpStatus.OK) {
-                 return ResponseEntity.status(validationResponse.getStatusCode())
-                                      .body(null);
-            }
-            
-        } catch (HttpClientErrorException e) {
-            System.err.println("External token validation failed with status: " + e.getStatusCode());
-            return ResponseEntity.status(e.getStatusCode()).body(null);
-            
-        } catch (RestClientException e) {
-            System.err.println("Error calling external validation service: " + e.getMessage());
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
-        }
+    public ResponseEntity<?> markMessagesAsSeen( @PathVariable String recipientId) {
         chatMessageService.markMessagesAsSeen(recipientId);
         return ResponseEntity.ok().build();
     }
     
     @GetMapping("/unread-count/{userId}")
-    public ResponseEntity<Map<String, Integer>> getUnreadMessageCounts(@RequestHeader("Authorization") String token, @PathVariable("userId") String userId) {
+    public ResponseEntity<Map<String, Integer>> getUnreadMessageCounts(@PathVariable("userId") String userId) {
     	logger.info("executing..unreadCount "+userId);
-    	
-    	try {
-            HttpHeaders headers = new HttpHeaders();
-            headers.set("Authorization", token);
-            HttpEntity<Void> requestEntity = new HttpEntity<>(headers);
-            
-            ResponseEntity<String> validationResponse = restTemplate.exchange(
-                APIGATEWAY_VALIDATE_TOKEN_URL,
-                HttpMethod.GET,
-                requestEntity,
-                String.class
-            );
-            
-            if (validationResponse.getStatusCode() != HttpStatus.OK) {
-                 return ResponseEntity.status(validationResponse.getStatusCode())
-                                      .body(null);
-            }
-            
-        } catch (HttpClientErrorException e) {
-            System.err.println("External token validation failed with status: " + e.getStatusCode());
-            return ResponseEntity.status(e.getStatusCode()).body(null);
-            
-        } catch (RestClientException e) {
-            System.err.println("Error calling external validation service: " + e.getMessage());
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
-        }
+    
         Map<String, Integer> unreadCounts = chatMessageService.getUnreadMessageCounts(userId);
         return ResponseEntity.ok(unreadCounts);
     } 
